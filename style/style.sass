@@ -1,0 +1,151 @@
+////////////////// локальные переменные //////////////////
+
+$t-color-black: #222222
+$t-color-trolley-grey: #7a7a7a
+$t-color-ash-grey: #b2b2b2
+$t-color-taupe-gray: #898989
+$t-color-dark-gray: #a4a4a4
+$t-color-white: #ffffff
+$t-color-pink: #f16d7f
+$b-color-light-gray: #f5f5f5
+$b-color-platinum: #e1e1e1
+$b-color-grey: #f8f8f8
+$bg-colog-grey: #e6e6e6
+////////////////// глобальные переменные //////////////////
+
+$palette-primary: $t-color-black
+$palette-secondary: $t-color-pink
+
+$palette-background-primary: $b-color-grey
+$palette-background-secondary: $b-color-grey
+$palette-background-active: $t-color-trolley-grey
+
+$palette-border-primary: $bg-colog-grey
+$padding-l-r: 15px	
+
+@mixin font-family
+	font-family: 'Lato', sans-serif
+
+@mixin flex-a-center
+	display: flex
+	align-items: center
+
+////////////////// обнуление стилей //////////////////
+*
+	margin: 0
+	padding: 0
+	border: 0
+
+*, *:before, *:after
+	box-sizing: border-box
+
+a:focus, a:active
+	outline: none
+
+a:focus, a:active
+	outline: none
+
+nav, footer, header, aside
+	display: block
+
+html,body
+	height: 100%
+	width: 100%
+	font-size: 100%
+	line-height: 1
+	font-size: 14px
+	-ms-text-size-adjust: 100%
+	-moz-text-size-adjust: 100%
+	-webkit-text-size-adjust: 100%
+
+input,button,textarea
+	font-family: inherit
+
+input::-ms-clear
+	display: none
+
+button
+	cursor: pointer
+
+button::-moz-focus-inner
+	padding: 0
+	border: 0
+
+a, a:visited, a:hover
+	text-decoration: none
+
+ul li
+	list-style: none
+
+img
+	vertical-align: top
+
+h1,h2,h3,h4,h5,h6
+	font-size: inherit
+	font-weight: 400
+
+////////////////// общие стили //////////////////
+
+body
+	@include font-family
+
+.center
+	padding: 0 calc(50% - 570px)
+
+.header
+	height: 100px
+	@include flex-a-center
+
+	&__left
+		@include flex-a-center
+		&__logo
+			@include flex-a-center
+			&__img
+				@include flex-a-center
+			&__text
+				font-size: 27px
+				font-weight: 300
+				letter-spacing: 0.68px
+				color: $palette-primary
+				padding-left: 13px
+			.pink
+				color: $palette-secondary
+				font-weight: 600
+
+	.browse__button
+		@include flex-a-center
+		padding: 14px 15px
+		margin-left: 37px
+		height: 39px
+		font-size: 14px
+		font-weight: 300
+		line-height: 10px
+		letter-spacing: 0.35px
+		color: $palette-primary
+		border: solid 1px $palette-border-primary
+		border-radius: 3px 0 0 3px
+		background: $palette-background-secondary
+		&__img
+			padding-left: 8px
+	.header__left__search_box
+		@include flex-a-center
+		.header__left__input
+			padding: 14px $padding-l-r
+			border-top: solid 1px $palette-border-primary
+			border-bottom: solid 1px $palette-border-primary
+			width: 317px - ($padding-l-r * 2)
+			height: 39px
+
+		.header__left__button__search
+			background-image: url(../img/paraphernalia/search.png)
+			background-repeat: no-repeat
+			background-position: center
+			@include flex-a-center
+			height: 39px
+			width: 39px	
+			border-radius: 0 3px 3px 0		
+			border: solid 1px $palette-border-primary
+			&:hover
+				background-color: $palette-background-secondary
+			&:active
+				background-color: $palette-border-primary
