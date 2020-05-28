@@ -149,6 +149,8 @@ body
 		border: solid 1px $palette-border-primary
 		border-radius: 3px 0 0 3px
 		background: $palette-background-secondary
+		transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+		transition: all 0.2s
 		@include flex-a-center
 
 		&__img
@@ -172,6 +174,8 @@ body
 			width: 39px
 			border-radius: 0 3px 3px 0
 			border: solid 1px $palette-border-primary
+			transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+			transition: all 0.2s
 			@include flex-a-center
 
 			&:hover
@@ -191,7 +195,10 @@ body
 			color: $palette-tertiary
 			letter-spacing: 0.38px
 			font-size: 15px
+			transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+			transition: all 0.2s
 			@include flex-a-center
+			&:hover
 
 			&__arrow
 				padding-left: 8px
@@ -203,6 +210,8 @@ body
 		width: 40px
 		height: 29px
 		position: relative
+		transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+		transition: all 0.2s
 
 		&__number
 			background-color: $palette-background-primary
@@ -222,7 +231,8 @@ body
 ////////////////// button My Account //////////////////
 .account__box
 	position: relative
-
+	transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+	transition: all 0.2s
 	& .drop__li:hover
 		filter: drop-shadow(0 0 0.04rem rgb(173, 173, 173))
 
@@ -287,6 +297,8 @@ body
 	background-repeat: no-repeat
 	width: 15px
 	height: 15px
+	transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+	transition: all 0.2s
 
 .drop__li__total
 	justify-content: space-between
@@ -311,6 +323,8 @@ body
 	justify-content: center
 	align-items: center
 	padding: 0
+	transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+	transition: all 0.2s
 
 	&:hover
 		color: #f16d7f
@@ -328,6 +342,8 @@ body
 	justify-content: center
 	align-items: center
 	padding: 0
+	transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+	transition: all 0.2s
 
 	&:hover
 		color: #f16d7f
@@ -345,12 +361,15 @@ body
 
 .menu__list
 	position: relative
-
+	transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+	transition: all 0.2s
 	&:hover .drop
 		display: flex
 
 .browse__box:hover .browse_drop
 	display: flex
+	transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+	transition: all 0.2s
 
 .menu__link
 	padding: 20px
@@ -371,6 +390,8 @@ body
 
 .browse__box:hover .browse_drop
 	display: flex
+	transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+	transition: all 0.2s
 
 .browse_drop
 	background-color: #fff
@@ -412,6 +433,8 @@ body
 		text-align: right
 		letter-spacing: 0.03em
 		line-height: 28px
+		transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+		transition: all 0.2s
 
 	&__a:hover
 		color: #f16d7f
@@ -472,7 +495,8 @@ body
 			height: 542px
 			position: relative
 			margin: 10px
-
+			transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+			transition: all 0.2s
 			&:hover
 				filter: brightness(80%)
 
@@ -483,7 +507,8 @@ body
 			height: 261px
 			position: relative
 			margin: 10px
-
+			transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+			transition: all 0.2s
 			&:hover
 				filter: brightness(50%)
 
@@ -544,14 +569,20 @@ body
 		width: 263px
 		margin-bottom: 25px
 		position: relative
-
+		transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+		transition: all 0.2s
+		animation: shadow-drop-2-center 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
 		&:hover
 			box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16)
-
+			transform: scale(1.03)
 			.product__img
+				transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+				transition: all 0.2s
 				filter: brightness(50%)
 
 			.product__add
+				transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+				transition: all 0.2s
 				display: flex
 
 		&__img
@@ -583,7 +614,8 @@ body
 			color: $palette-tertiary
 			line-height: 40px
 			border: 1px solid $palette-tertiary
-
+			transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+			transition: all 0.2s
 			&:hover
 				box-shadow: 0px 0px 8px 0px $palette-tertiary
 
@@ -598,10 +630,14 @@ body
 	color: $palette-tertiary
 	letter-spacing: 0.38px
 	font-size: 15px
+	transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+	transition: all 0.2s
 	@include flex-a-center
 
 	&__img
 		margin-left: 9px
+		transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+		transition: all 0.2s
 	&:hover
 		filter: brightness(80%)
 
@@ -620,10 +656,11 @@ body
 
 		&__link
 			background-image: url(../img/background/offer-for-women-img.jpg)
-
 			background-repeat: no-repeat
 			height: 100%
 			width: 767px
+			transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+			transition: all 0.2s
 			&:hover
 				filter: brightness(90%)
 
@@ -650,7 +687,8 @@ body
 			width: 373px
 			align-items: flex-start
 			margin-bottom: 20px
-
+			transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+			transition: all 0.2s
 			&:hover
 				filter: brightness(50%)
 
@@ -658,6 +696,8 @@ body
 				margin-left: 36px
 				margin-right: 30px
 				flex-wrap: wrap
+				transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+				transition: all 0.2s
 
 		.offer__link__content
 			display: flex
@@ -736,7 +776,8 @@ body
 	width: 38px
 	background-color: #d6d6d6
 	margin: 5px
-
+	transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+	transition: all 0.2s
 	.pagination:hover &
 		background-color: #e44258
 
@@ -786,6 +827,8 @@ body
 	text-align: center
 	letter-spacing: 0.03em
 	line-height: 46px
+	transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+	transition: all 0.2s
 
 	&:hover
 		background-color: #e44258
@@ -855,6 +898,8 @@ input:invalid:not(:placeholder-shown)
 	color: #898989
 	letter-spacing: 0.03em
 	line-height: 30px
+	transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+	transition: all 0.2s
 
 	&:hover
 		color: #252525
@@ -888,7 +933,8 @@ input:invalid:not(:placeholder-shown)
 	justify-content: center
 	align-items: center
 	margin: 4px
-
+	transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+	transition: all 0.2s
 	&:hover
 		color: #f7f7f8
 		background-color: #f16d7f
@@ -999,6 +1045,8 @@ input:invalid:not(:placeholder-shown)
 		color: #6f6e6e
 		text-transform: none
 		padding: 5px 11px
+		transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+		transition: all 0.2s
 
 .siting__center_line label
 	font-size: 14px
@@ -1044,6 +1092,8 @@ input:invalid:not(:placeholder-shown)
 	line-height: 11px
 	padding: 10px
 	outline: 1px solid #ebebeb
+	transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+	transition: all 0.2s
 
 .arrow-grey-bottom
 	padding-left: 16px
@@ -1054,18 +1104,22 @@ input:invalid:not(:placeholder-shown)
 	color: #6f6e6e
 	line-height: 11px
 	padding: 10px
-
 	outline: 1px solid #ebebeb
+	transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+	transition: all 0.2s
 
 .button__number
+	display: flex
+	align-items: center
+	justify-content: center
 	background-color: #fff
 	font-size: 14px
 	color: #6f6e6e
 	line-height: 11px
 	padding: 10px
-
 	outline: 1px solid #ebebeb
-
+	transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+	transition: all 0.2s
 .catalog_product
 	padding-top: 48px
 	display: flex
@@ -1090,7 +1144,8 @@ input:invalid:not(:placeholder-shown)
 	font-weight: 300
 	color: #c4c4c4
 	line-height: 14px
-
+	transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+	transition: all 0.2s
 	&:hover
 		color: #ef5b70
 		filter: none
@@ -1119,6 +1174,8 @@ input:invalid:not(:placeholder-shown)
 	border-radius: 2px
 	padding: 16px 45px
 	text-align: center
+	transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+	transition: all 0.2s
 
 	&:hover
 		background-color: #f16d7f
@@ -1136,6 +1193,10 @@ input:invalid:not(:placeholder-shown)
 .offers_link
 	text-align: center
 	width: 315px
+	transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+	transition: all 0.2s
+	&:hover
+		filter: brightness(70%)
 
 .offers__h4
 	padding-top: 30px
@@ -1171,7 +1232,7 @@ input:invalid:not(:placeholder-shown)
 	justify-content: space-between
 	align-items: center
 	padding: 0 calc(50% - 800px)
-	
+
 	.button__photo-big__left
 		display: flex
 		background-image: url(../img/paraphernalia/arrow-left-white.png)
@@ -1180,6 +1241,8 @@ input:invalid:not(:placeholder-shown)
 		background-repeat: no-repeat
 		width: 47px
 		height: 47px
+		transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+		transition: all 0.2s
 	.photo__img
 	.button__photo-big__right
 		display: flex
@@ -1189,6 +1252,8 @@ input:invalid:not(:placeholder-shown)
 		background-repeat: no-repeat
 		width: 47px
 		height: 47px
+		transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+		transition: all 0.2s
 ////////////////// descreption //////////////////
 
 .description
@@ -1279,6 +1344,8 @@ input:invalid:not(:placeholder-shown)
 		font-weight: bold
 		text-align: left
 		color: #ef5b70
+		transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+		transition: all 0.2s
 		&__img
 			margin: 0 15px
 
@@ -1320,3 +1387,132 @@ input:invalid:not(:placeholder-shown)
 				font-weight: bold
 
 				color: #f16d7f
+
+////////////////// description.html--end //////////////////
+////////////////// checkout.html--start //////////////////
+
+////////////////// accordion-box //////////////////
+
+.accordion
+	padding-top: 56px
+	display: flex
+	flex-direction: column
+	&__li
+		padding: 0
+		margin: 0
+		border: 0
+		width: 100%
+		border-bottom: 1px solid #e8e8e8
+	&__link
+		width: 100%
+		font-size: 16px
+		font-weight: bold
+		text-align: left
+		color: #222222
+		padding-top: 33px
+		padding-bottom: 33px
+	&__box
+		width: 100%
+		display: flex
+		padding-left: 45px
+
+		padding-bottom: 79px
+	&__item
+		
+		display: flex
+		flex-direction: column
+
+		&_left
+			width: 360px
+			margin-right: 140px
+		&_right
+			width: 390px
+	&__h4
+		font-size: 13px
+		color: #222222
+		padding: 7px 0
+		text-transform: uppercase
+		font-weight: bold
+	&__p
+		font-size: 13px
+		line-height: 20px
+		color: #b3b2b2
+		padding: 0 0
+	&__radio-box
+		padding: 14px 0
+	&__paragraph-box
+		padding: 30px 0
+	&__paragraph-discreption
+		font-size: 13px
+		line-height: 20px
+		text-align: left
+		color: #b3b2b2
+	&__button
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 180px
+		height: 50px
+		border: solid 1px #eaeaea
+		background-color: #ffffff
+		font-size: 14px
+		font-weight: bold
+		text-align: left
+		color: #4a4a4a
+		transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+		transition: all 0.2s
+		&:hover
+			filter: brightness(90%)
+
+.label-radio
+	display: flex
+	align-items: center
+	font-size: 12px
+	color: #222222
+	text-transform: uppercase
+	font-weight: bold
+	margin: 10px 0
+
+	&__input-radio
+		margin-right: 14px
+
+.form-login
+	padding: 5px 0
+	&__p-field-description
+		font-size: 12px
+		line-height: 11px
+		color: #222222
+		font-weight: bold
+		padding: 13px 0 7px 0
+	&__input-email
+		width: 390px
+		height: 45px
+		border: solid 1px #eaeaea !important
+		background-color: #ffffff
+		padding: 0 15px
+	&__input-password
+		width: 390px
+		height: 45px
+		border: solid 1px #eaeaea !important
+		background-color: #ffffff
+		padding: 0 15px
+	&__p-required
+		padding-top: 22px
+		font-size: 13px
+		line-height: 20px
+		text-align: left
+		color: #ff0d0d
+	&__button-box
+		display: flex
+		padding-top: 32px
+	&__button-fergot-password
+		font-size: 14px
+		line-height: 20px
+		text-align: left
+		color: #222222
+		padding-top: 24px
+		padding-left: 32px
+		transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+		transition: all 0.1s
+		&:hover
+			color: $palette-secondary
