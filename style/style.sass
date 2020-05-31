@@ -179,9 +179,8 @@ body
 			@include flex-a-center
 
 			&:hover
-				background-color: $palette-background-secondary
-			&:active
-				background-color: $palette-border-primary
+				background-color: #e44258
+
 	&__right
 		display: flex
 		flex-direction: row-reverse
@@ -199,7 +198,7 @@ body
 			transition: all 0.2s
 			@include flex-a-center
 			&:hover
-
+				background-color: #e44258
 			&__arrow
 				padding-left: 8px
 	.button__cart
@@ -299,6 +298,8 @@ body
 	height: 15px
 	transition-timing-function: cubic-bezier(.48,.46,0,1.08)
 	transition: all 0.2s
+	&:hover
+		filter: brightness(50%)
 
 .drop__li__total
 	justify-content: space-between
@@ -327,7 +328,7 @@ body
 	transition: all 0.2s
 
 	&:hover
-		color: #f16d7f
+		color: #e44258
 		border: 1px solid #f16d7f
 
 .button__go
@@ -346,7 +347,7 @@ body
 	transition: all 0.2s
 
 	&:hover
-		color: #f16d7f
+		color: #e44258
 		border: 1px solid #f16d7f
 
 ////////////////// menu //////////////////
@@ -639,7 +640,7 @@ body
 		transition-timing-function: cubic-bezier(.48,.46,0,1.08)
 		transition: all 0.2s
 	&:hover
-		filter: brightness(80%)
+		background-color: #e44258
 
 ////////////////// sentence-block //////////////////
 
@@ -902,7 +903,7 @@ input:invalid:not(:placeholder-shown)
 	transition: all 0.2s
 
 	&:hover
-		color: #252525
+		color: #f16d7f
 		////////////////// footer-block //////////////////
 .footer
 	height: 79px
@@ -1018,17 +1019,25 @@ input:invalid:not(:placeholder-shown)
 .siting__box
 	display: flex
 	padding-bottom: 35px
+	justify-content: space-between
 
 .siting__left .breadcrumbs,
 .siting__center
 	width: 330px
-
+.siting__right
+	width: 330px
 .siting__h4
 	font-size: 14px
 	font-weight: bold
 	color: #6f6e6e
 	text-transform: uppercase
 	padding-bottom: 20px
+
+.siting__p
+	font-size: 14px
+	line-height: 26px
+	text-align: left
+	color: #6f6e6e
 
 .catalog-s__right
 	width: 100%
@@ -1056,10 +1065,21 @@ input:invalid:not(:placeholder-shown)
 	padding-left: 8px
 
 .siting__center_line
+	display: flex
 	margin-bottom: 10px
 
 .checkbox_siting:not(:first-child)
 	margin-left: 23px
+
+.checkbox-label_siting
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	width: 50px
+	&:not(:first-child)
+		margin-left: 17px
+.checkbox_siting
+	margin-right: 9px
 
 .siting__box_small
 	display: flex
@@ -1077,20 +1097,24 @@ input:invalid:not(:placeholder-shown)
 	color: #6f6e6e
 	line-height: 11px
 	outline: 1px solid #ebebeb
+	transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+	transition: all 0.2s
 
-.button__show:hover,
+.button__short_by:hover,
+.button__show:hover
+	background-color: #e44258
+	color: #fff
 .button__number:hover,
 .button__name:hover,
-
-	&:hover
-		background-color: #eeeeee
+	background-color: #f3f3f362
 
 .button__name
+	width: 86px
 	background-color: #fff
 	font-size: 14px
 	color: #6f6e6e
 	line-height: 11px
-	padding: 10px
+	padding: 10px 11px
 	outline: 1px solid #ebebeb
 	transition-timing-function: cubic-bezier(.48,.46,0,1.08)
 	transition: all 0.2s
@@ -1109,6 +1133,7 @@ input:invalid:not(:placeholder-shown)
 	transition: all 0.2s
 
 .button__number
+	width: 67px
 	display: flex
 	align-items: center
 	justify-content: center
@@ -1116,7 +1141,7 @@ input:invalid:not(:placeholder-shown)
 	font-size: 14px
 	color: #6f6e6e
 	line-height: 11px
-	padding: 10px
+	padding: 10px 12px
 	outline: 1px solid #ebebeb
 	transition-timing-function: cubic-bezier(.48,.46,0,1.08)
 	transition: all 0.2s
@@ -1243,6 +1268,8 @@ input:invalid:not(:placeholder-shown)
 		height: 47px
 		transition-timing-function: cubic-bezier(.48,.46,0,1.08)
 		transition: all 0.2s
+		&:hover
+			background-color: #e44258
 	.photo__img
 	.button__photo-big__right
 		display: flex
@@ -1254,6 +1281,8 @@ input:invalid:not(:placeholder-shown)
 		height: 47px
 		transition-timing-function: cubic-bezier(.48,.46,0,1.08)
 		transition: all 0.2s
+		&:hover
+			background-color: #e44258
 ////////////////// descreption //////////////////
 
 .description
@@ -1346,6 +1375,13 @@ input:invalid:not(:placeholder-shown)
 		color: #ef5b70
 		transition-timing-function: cubic-bezier(.48,.46,0,1.08)
 		transition: all 0.2s
+		&:hover
+			background: #e44258
+			color: #fff
+		&:hover .button__add-cart__img
+			transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+			transition: all 0.2s
+			filter: brightness(300%)
 		&__img
 			margin: 0 15px
 
@@ -1368,6 +1404,12 @@ input:invalid:not(:placeholder-shown)
 			display: flex
 			flex-direction: column
 			width: 261px
+			transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+			transition: all 0.2s
+			animation: shadow-drop-2-center 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+			&:hover
+				transform: scale(1.03)
+				box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16)
 			&__img
 				display: flex
 				justify-content: center
@@ -1382,10 +1424,10 @@ input:invalid:not(:placeholder-shown)
 				color: #6f6e6e
 			&__price
 				padding-top: 17px
+				padding-bottom: 21px
 				padding-left: 15px
 				font-size: 16px
 				font-weight: bold
-
 				color: #f16d7f
 
 ////////////////// description.html--end //////////////////
@@ -1418,7 +1460,7 @@ input:invalid:not(:placeholder-shown)
 
 		padding-bottom: 79px
 	&__item
-		
+
 		display: flex
 		flex-direction: column
 
@@ -1516,3 +1558,208 @@ input:invalid:not(:placeholder-shown)
 		transition: all 0.1s
 		&:hover
 			color: $palette-secondary
+
+////////////////// checkout.html--end //////////////////
+////////////////// shopping-cart.html--start //////////////////
+
+.shopping-cart-store
+	display: flex
+	flex-direction: column
+	padding-top: 20px
+
+	&__name-list, &__product
+		display: flex
+		width: 100%
+		justify-content: space-between
+		align-items: center
+		border-bottom: 1px solid #eaeaea
+	&__name
+		width: 90px
+		white-space: nowrap
+		text-transform: uppercase
+		margin: 20px 5px
+		display: flex
+		background: white
+		justify-content: center
+		&_style-bold
+			font-size: 13px
+			font-weight: bold
+			line-height: 15px
+			letter-spacing: -0.2px
+			text-align: left
+			color: #222222
+		&:first-child
+			margin-left: 0
+
+		&:last-child
+			margin-right: 0
+	&__product-details
+		width: 415px
+		justify-content: flex-start
+	&__unite-price
+		width: 84px
+	&__quantity
+		width: 74px
+	&__shipping
+		width: 66px
+	&__subtotal
+		width: 72px
+	&__action
+		width: 52px
+
+	&__input-number
+		width: 54px
+		height: 30px
+		border: solid 1px #eaeaea !important
+		text-align: center
+
+	&__button-box
+		display: flex
+		justify-content: space-between
+		padding-top: 44px
+
+	&__button-clear, &__button-continue
+		font-size: 14px
+		font-weight: bold
+		text-align: left
+		color: #4a4a4a
+		text-transform: uppercase
+		border: solid 1px #eaeaea
+		padding: 20px 39px 18px 39px
+		transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+		transition: all 0.1s
+		&:hover
+			background: #e44258
+			color: $palette-tertiary
+	&__feedback
+		padding-top: 63px
+		display: flex
+		justify-content: space-between
+
+	&__feedback-item
+		display: flex
+		flex-direction: column
+		width: 335px
+
+	&__feedback-h4
+		font-size: 16px
+		font-weight: bold
+		color: #222222
+		text-transform: uppercase
+		&_right
+			text-align: right
+
+	&__feedback-input-sity
+		width: 100%
+		height: 45px
+		border: solid 1px #eaeaea !important
+		font-size: 13px
+		font-weight: 300
+		text-align: left
+		color: #b1b1b1
+		padding: 0 18px
+		display: flex
+		align-items: center
+		margin-top: 22px
+	&__feedback-input-text
+		width: 100%
+		height: 45px
+		border: solid 1px #eaeaea !important
+		font-size: 13px
+		font-weight: 300
+		text-align: left
+		color: #b1b1b1
+		padding: 0 18px
+		display: flex
+		align-items: center
+		margin-top: 22px
+	&__feedback-button-quote
+		width: max-content
+		font-size: 11px
+		font-weight: bold
+		text-align: left
+		color: #4a4a4a
+		text-transform: uppercase
+		border: solid 1px #eaeaea
+		padding: 12px 15px
+		margin-top: 23px
+		transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+		transition: all 0.1s
+		&:hover
+			background: #e44258
+			color: $palette-tertiary
+
+	&__feedback-checkout-form
+		display: flex
+		width: 360px
+		background: #f5f3f3
+		flex-direction: column
+		align-items: center
+		padding: 0 43px
+		height: min-content
+
+	&__feedback-checkout-form-text
+		border-bottom: 1px solid #e2e2e2
+		width: 100%
+		display: flex
+		flex-direction: column
+		padding-bottom: 22px
+
+	&__feedback-p
+		font-size: 14px
+		font-weight: 300
+		text-align: left
+		color: #000000
+		padding: 28px 0 0 0
+
+	&__feedback-p-total
+		padding-top: 40px
+		padding-bottom: 14px
+		font-size: 11px
+		text-align: right
+		color: #4a4a4a
+	&__feedback-button
+		width: 100%
+		padding: 18px 42px
+		font-size: 16px
+		font-weight: bold
+		color: #492f2f
+		margin-top: 36px
+		margin-bottom: 60px
+		background-color: #f16d7f
+		display: flex
+		justify-content: center
+		text-transform: uppercase
+		color: #ffffff
+		transition-timing-function: cubic-bezier(.48,.46,0,1.08)
+		transition: all 0.1s
+		&:hover
+			background-color: #e44258
+.product-box-cart
+	display: flex
+	justify-content: flex-start
+	&__img
+		width: 100px
+
+	&__content
+		display: flex
+		flex-direction: column
+		padding: 13px 21px 22px 21px
+	&__name
+		font-size: 13px
+		text-align: right
+		color: #222222
+		padding-bottom: 27px
+		&_color-grey
+			color: #656565
+	&__siting
+		font-size: 13px
+		line-height: 20px
+		text-align: left
+		color: #575757
+		text-transform: none
+		&_color-grey
+			color: #6f6e6e
+		&_color-darck-grey
+			font-weight: bold
+			color: #575757

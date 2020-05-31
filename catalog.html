@@ -20,7 +20,7 @@
             </a>
             <div class="browse__box">
                 <a href="#" class="browse__button"><span class="browse__button_text">Browse</span><img
-                        src="img/paraphernalia/arrow-bottom.png" class="browse__button__img" alt="">
+                        src="img/paraphernalia/arrow-bottom.png" class="browse__button__img" alt="arrow">
                 </a>
                 <div class="browse_drop">
                     <div class="drop__flex">
@@ -58,40 +58,42 @@
         <div class="header__right">
             <div class="account__box">
                 <a href="#" class="button__account">My Account <img class="button__account__arrow"
-                        src="img/paraphernalia/arrow-bottom-white.png" alt=""></a>
+                        src="img/paraphernalia/arrow-bottom-white.png" alt="arrow"></a>
                 <div class="drop">
                     <div class="drop__flex">
                         <div class="drop__ul">
-                            <li>
-                                <form action="#" class="drop__li">
-                                    <div class="drop__li-left">
-                                        <a href="#" class="s-product-img product-s-1"></a>
-                                    </div>
-                                    <div class="drop__li-center">
-                                        <a href="#" class="drop__li-center__h4">Rebox Zane</a>
-                                        <div class="drop__li-center__stars"></div>
-                                        <p class="drop__li-center__price">1 x $250</p>
-                                    </div>
-                                    <div class="drop__li-rght"><a href="#" class="button__dellete"></a></div>
-                                </form>
-                            </li>
-                            <li>
-                                <form action="#" class="drop__li">
-                                    <div class="drop__li-left">
-                                        <a href="#" class="s-product-img product-s-2"></a>
-                                    </div>
-                                    <div class="drop__li-center">
-                                        <a href="#" class="drop__li-center__h4">Rebox Zane</a>
-                                        <div class="drop__li-center__stars"></div>
-                                        <p class="drop__li-center__price">1 x $250</p>
-                                    </div>
-                                    <div class="drop__li-rght"><a href="#" class="button__dellete"></a></div>
-                                </form>
-                            </li>
-                            <li class="drop__li drop__li__total">
-                                <p class="drop__li__total_p">TOTAL</p>
-                                <p class="drop__li__total_p">$500.00</p>
-                            </li>
+                            <ul>
+                                <li>
+                                    <form action="#" class="drop__li">
+                                        <div class="drop__li-left">
+                                            <a href="#" class="s-product-img product-s-1"></a>
+                                        </div>
+                                        <div class="drop__li-center">
+                                            <a href="#" class="drop__li-center__h4">Rebox Zane</a>
+                                            <div class="drop__li-center__stars"></div>
+                                            <p class="drop__li-center__price">1 x $250</p>
+                                        </div>
+                                        <div class="drop__li-rght"><a href="#" class="button__dellete"></a></div>
+                                    </form>
+                                </li>
+                                <li>
+                                    <form action="#" class="drop__li">
+                                        <div class="drop__li-left">
+                                            <a href="#" class="s-product-img product-s-2"></a>
+                                        </div>
+                                        <div class="drop__li-center">
+                                            <a href="#" class="drop__li-center__h4">Rebox Zane</a>
+                                            <div class="drop__li-center__stars"></div>
+                                            <p class="drop__li-center__price">1 x $250</p>
+                                        </div>
+                                        <div class="drop__li-rght"><a href="#" class="button__dellete"></a></div>
+                                    </form>
+                                </li>
+                                <li class="drop__li drop__li__total">
+                                    <p class="drop__li__total_p">TOTAL</p>
+                                    <p class="drop__li__total_p">$500.00</p>
+                                </li>
+                            </ul>
                             <a href="#" class="drop__li button__checkout">Checkout</a>
                             <a href="#" class="drop__li button__go">Go to cart</a>
                         </div>
@@ -99,7 +101,7 @@
                 </div>
 
             </div>
-            <a href="#" class="button__cart">
+            <a href="shopping-cart.html" class="button__cart">
                 <div class="button__cart__number">2</div>
             </a>
         </div>
@@ -524,33 +526,33 @@
                         <h4 class="siting__h4">Size</h4>
                         <div class="siting__center_line">
 
-                            <label for="XXS">
+                            <label class="checkbox-label_siting" for="XXS">
                                 <input type="checkbox" class="checkbox_siting" name="XSS" id="XXS">
                                 XXS
                             </label>
-                            <label for="XS">
+                            <label class="checkbox-label_siting" for="XS">
                                 <input type="checkbox" class="checkbox_siting" name="XS" id="XS">
                                 XS
                             </label>
-                            <label for="S">
+                            <label class="checkbox-label_siting" for="S">
                                 <input type="checkbox" class="checkbox_siting" name="S" id="S">
                                 S
                             </label>
-                            <label for="M">
+                            <label class="checkbox-label_siting" for="M">
                                 <input type="checkbox" class="checkbox_siting" name="M" id="M">
                                 M
                             </label>
                         </div>
                         <div class="siting__center_line">
-                            <label for="L">
+                            <label class="checkbox-label_siting" for="L">
                                 <input type="checkbox" class="checkbox_siting" name="L" id="L">
                                 L
                             </label>
-                            <label for="XL">
+                            <label class="checkbox-label_siting" for="XL">
                                 <input type="checkbox" class="checkbox_siting" name="XL" id="XL">
                                 XL
                             </label>
-                            <label for="XXL">
+                            <label class="checkbox-label_siting" for="XXL">
                                 <input type="checkbox" class="checkbox_siting" name="XXL" id="XXL">
                                 XXL
                             </label>
@@ -562,23 +564,28 @@
                         <div class="slidecontainer">
                             <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
                         </div>
+                        <p class="siting__p">$52</p>
                     </div>
                 </div>
                 <div class="siting__box_small">
                     <div class="button_box">
                         <a href="#" class="button__short_by">Sort By</a>
-                        <a href="#" class="button__name">Name <img class="arrow-grey-bottom"
-                                src="img/arrow-grey-bottom.png" alt=""></a>
+                        <input class="button__name" name="short" list="short" placeholder="Name" />
+                        <datalist id="short">
+                            <option value="Name"></option>
+                            <option value="Date"></option>
+                            <option value="Someting"></option>
+                        </datalist>
                     </div>
                     <div class="button_box">
                         <a href="#" class="button__show">Show</a>
-                        <a href="#" class="button__number">09 <img class="arrow-grey-bottom"
-                                src="img/paraphernalia/arrow-bottom.png" alt=""></a>
+                        <input class="button__number" value="09" type="number">
                     </div>
                 </div>
                 <div class="catalog">
                     <div class="product">
-                        <a href="description.html" class="product__img"><img src="img/product/jacket-3.jpg" alt=""></a>
+                        <a href="description.html" class="product__img"><img src="img/product/jacket-3.jpg"
+                                alt="product"></a>
                         <a href="description.html" class="product__name">Mango People T-shirt</a>
                         <p class="product__price">$52.00</p>
                         <a href="#" class="product__add">
@@ -587,7 +594,8 @@
                             Cart</a>
                     </div>
                     <div class="product">
-                        <a href="description.html" class="product__img"><img src="img/product/jacket-4.jpg" alt=""></a>
+                        <a href="description.html" class="product__img"><img src="img/product/jacket-4.jpg"
+                                alt="product"></a>
                         <a href="description.html" class="product__name">Mango People T-shirt</a>
                         <p class="product__price">$52.00</p>
                         <a href="#" class="product__add">
@@ -596,7 +604,8 @@
                             Cart</a>
                     </div>
                     <div class="product">
-                        <a href="description.html" class="product__img"><img src="img/product/jacket-1.jpg" alt=""></a>
+                        <a href="description.html" class="product__img"><img alt="product"
+                                src="img/product/jacket-1.jpg"></a>
                         <a href="description.html" class="product__name">Mango People T-shirt</a>
                         <p class="product__price">$52.00</p>
                         <a href="#" class="product__add">
@@ -605,7 +614,8 @@
                             Cart</a>
                     </div>
                     <div class="product">
-                        <a href="description.html" class="product__img"><img src="img/product/shirt-2.jpg" alt=""></a>
+                        <a href="description.html" class="product__img"><img alt="product"
+                                src="img/product/shirt-2.jpg"></a>
                         <a href="description.html" class="product__name">Mango People T-shirt</a>
                         <p class="product__price">$52.00</p>
                         <a href="#" class="product__add">
@@ -614,8 +624,8 @@
                             Cart</a>
                     </div>
                     <div class="product">
-                        <a href="description.html" class="product__img"><img src="img/product/pullover-1.jpg"
-                                alt=""></a>
+                        <a href="description.html" class="product__img"><img alt="product"
+                                src="img/product/pullover-1.jpg"></a>
                         <a href="description.html" class="product__name">Mango People T-shirt</a>
                         <p class="product__price">$52.00</p>
                         <a href="#" class="product__add">
@@ -624,7 +634,7 @@
                             Cart</a>
                     </div>
                     <div class="product">
-                        <a href="description.html" class="product__img"><img src="img/product/jacket-5.jpg" alt=""></a>
+                        <a href="description.html" class="product__img"><img alt="product" src="img/product/jacket-5.jpg"></a>
                         <a href="description.html" class="product__name">Mango People T-shirt</a>
                         <p class="product__price">$52.00</p>
                         <a href="#" class="product__add">
@@ -633,7 +643,8 @@
                             Cart</a>
                     </div>
                     <div class="product">
-                        <a href="description.html" class="product__img"><img src="img/product/jacket-6.jpg" alt=""></a>
+                        <a href="description.html" class="product__img"><img alt="product"
+                                src="img/product/jacket-6.jpg"></a>
                         <a href="description.html" class="product__name">Mango People T-shirt</a>
                         <p class="product__price">$52.00</p>
                         <a href="#" class="product__add">
@@ -643,7 +654,8 @@
                     </div>
 
                     <div class="product">
-                        <a href="description.html" class="product__img"><img src="img/product/jacket-7.jpg" alt=""></a>
+                        <a href="description.html" class="product__img"><img alt="product"
+                                src="img/product/jacket-7.jpg"></a>
                         <a href="description.html" class="product__name">Mango People T-shirt</a>
                         <p class="product__price">$52.00</p>
                         <a href="#" class="product__add">
@@ -652,7 +664,8 @@
                             Cart</a>
                     </div>
                     <div class="product">
-                        <a href="description.html" class="product__img"><img src="img/product/shirt-3.jpg" alt=""></a>
+                        <a href="description.html" class="product__img"><img alt="product"
+                                src="img/product/shirt-3.jpg"></a>
                         <a href="description.html" class="product__name">Mango People T-shirt</a>
                         <p class="product__price">$52.00</p>
                         <a href="#" class="product__add">
@@ -673,25 +686,25 @@
                         <a href="#" class="button_link">6.....20</a>
                         <a href="#" class="button_link button_link-right"></a>
                     </div>
-                    <a href="" class="button_all">View All</a>
+                    <a href="#" class="button_all">View All</a>
                 </div>
             </div>
         </section>
         <div class="offers__box center">
             <a href="#" class="offers_link">
-                <img src="img/paraphernalia/truck-img.png" alt="">
+                <img src="img/paraphernalia/truck-img.png" alt="truck">
                 <h4 class="offers__h4">Free Delivery</h4>
                 <p class="offers__p">Worldwide delivery on all. Authorit tively morph next-generation innov tion with
                     extensive models.</p>
             </a>
             <a href="#" class="offers_link">
-                <img src="img/paraphernalia/discount-img.png" alt="">
+                <img src="img/paraphernalia/discount-img.png" alt="discount">
                 <h4 class="offers__h4">Sales & discounts</h4>
                 <p class="offers__p">Worldwide delivery on all. Authorit tively morph next-generation innov tion with
                     extensive models.</p>
             </a>
             <a href="#" class="offers_link">
-                <img src="img/paraphernalia/crown-img.png" alt="">
+                <img src="img/paraphernalia/crown-img.png" alt="crown">
                 <h4 class="offers__h4">Quality assurance</h4>
                 <p class="offers__p">Worldwide delivery on all. Authorit tively morph next-generation innov tion with
                     extensive models.</p>
@@ -731,8 +744,7 @@
                         maxlength="40">
                     <span class="form__error">This field should contain e-mail in the format someting@site.com</span>
                     <a href="#" class="reviews_button">Subscribe</a>
-            </div>
-            </form>
+                </form>
             </div>
         </section>
         <nav class="nav__box center">
